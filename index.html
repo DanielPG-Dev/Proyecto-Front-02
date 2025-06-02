@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- contenedor de login -->
+        <div class="auth_container">   
+            <section id="auth_section">
+                <div>
+                    <img src="./assets/images/Frame 1321315510.svg" alt="cover image">
+                </div>
+                <div class="auth_form">
+                    <header>
+                        <h2>Welcome back</h2>
+                        <p>Welcome to the login page, please enter your identity for enter your account</p>
+                    </header>
+                    <form  class="login_form" action="/login" method="post">
+                        <div>
+                            <label for="usarname">Username</label>
+                            <input type="text" id="username" placeholder="Enter usarname" required>
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Enter password" required>
+                        </div>
+                        <div class="forgot_password">
+                            <a href="/forgot_password">Forgot password</a>
+                        </div>
+                        <button type="submit" class="login_button">Login</button>
+                    </form>
+                    <div class="social_login">
+                        <p>Or login with</p>
+                        <div class="social_login">
+                            <a href="https://www.google.com/?hl=es" target="_blank">
+                                <img src="./assets/icons/icon-google-circulo.svg" alt="google">
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img src="./assets/icons/icon-face-circulo.svg" alt="facebook">
+                            </a>
+                            <a href="https://account.apple.com/" target="_blank">
+                                <img src="./assets/icons/icon-apple-circulo.svg" alt="apple">
+                            </a>
+                        </div>
+                        <p>Don’t have an account? <a href="#">Sign up</a></p>
+                    </div>   
+                </div>
+            </section>
+        </div>
+        <!-- contenedor de registro -->
+         <div class="register_form">
+            <header>
+                <h2>Create Account</h2>
+                <p>Create account to manage all your automotive business needs</p>
+            </header>
+            <div>
+                <form action="/register" method="post">
+                    <div>
+                        <div>
+                            <label for="first_name">First name</label>
+                            <input type="text" id="first_name" placeholder="Your first name" required>
+                            <label for="last_name">Last name</label>
+                            <input type="text" id="last_name" placeholder="Your last name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter email" required>
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" placeholder="+62">
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Enter password" required>
+                        </div>
+                        <div class="forgot_password">
+                            <a href="/forgot_password">Forgot password</a>
+                        </div>
+                        <button type="submit" class="login_button">Login</button>
+                    </div>
+                    <div class="social_login">
+                        <p>Or login with</p>
+                        <div class="social_login">
+                            <a href="https://www.google.com/?hl=es" target="_blank">
+                                <img src="./assets/icons/icon-google-circulo.svg" alt="google">
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img src="./assets/icons/icon-face-circulo.svg" alt="facebook">
+                            </a>
+                            <a href="https://account.apple.com/" target="_blank">
+                                <img src="./assets/icons/icon-apple-circulo.svg" alt="apple">
+                            </a>
+                        </div>
+                        <p>Don’t have an account? <a href="#">Sign up</a></p>
+                    </div>   
+                </form>
+            </div>
+
+         </div>
+    </div>
+</body>
+</html>
