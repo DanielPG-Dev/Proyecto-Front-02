@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="app">
@@ -12,20 +15,20 @@
         <div class="auth_container">   
             <section id="auth_section">
                 <div>
-                    <img src="./assets/images/Frame 1321315510.svg" alt="cover image">
+                    <img class="img_portada" src="./assets/images/Frame 1321315510.svg" alt="cover image">
                 </div>
-                <div class="auth_form">
+                    <div class="auth_form">
                     <header>
                         <h2>Welcome back</h2>
-                        <p>Welcome to the login page, please enter your identity for enter your account</p>
+                        <p class="shaded_text">Welcome to the login page, please enter your identity for enter your account</p>
                     </header>
                     <form  class="login_form" action="/login" method="post">
                         <div>
-                            <label for="usarname">Username</label>
+                            <label for="usarname">Username</label><br>
                             <input type="text" id="username" placeholder="Enter usarname" required>
                         </div>
                         <div>
-                            <label for="password">Password</label>
+                            <label for="password">Password</label><br>
                             <input type="password" id="password" placeholder="Enter password" required>
                         </div>
                         <div class="forgot_password">
@@ -35,7 +38,7 @@
                     </form>
                     <div class="social_login">
                         <p>Or login with</p>
-                        <div class="social_login">
+                        <div class="social_icons">
                             <a href="https://www.google.com/?hl=es" target="_blank">
                                 <img src="./assets/icons/icon-google-circulo.svg" alt="google">
                             </a>
@@ -48,7 +51,8 @@
                         </div>
                         <p>Don’t have an account? <a href="#">Sign up</a></p>
                     </div>   
-                </div>
+                    </div>
+                </div> 
             </section>
         </div>
         <!-- contenedor de registro -->
@@ -103,3 +107,5 @@
     </div>
 </body>
 </html>
+
+

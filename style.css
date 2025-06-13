@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    background:#fff;
+    font-size: 100%;
+}
+
+:root{
+    /* Colors */
+    --text-color-title:#131313;
+    --text-color: #7b7b7b;
+    
+    /* Typography */
+    --base-font:Plus Jakarta Sans;
+    font-family: var(--base-font) ;
+    --base-font-size: 12px;
+}
+
+.img_portada{
+    width: 343px;
+    height:652px ;
+    margin: 80px 16px;
+    box-sizing: border-box;
+}
+
+h2{
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p{
+    font-size: var(--base-font-size);
+    color: #7B7B7B;
+}
+
+header p {
+    margin-bottom: 32px;
+    margin-top: 8px;
+}
+
+.shaded_text{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+label{
+    font-size: var(--base-font-size);
+    color: var(--text-color-title);
+    font-weight: bold;
+}
+
+.login_form input{
+    background: #f3f3f3;
+    border: none;
+    width: 311px;
+    height: 48px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    margin-top: 8px;
+}
+
+input::placeholder{
+    font-size: 14px;
+    font-family: var(--base-font);
+    color: #9b9b9b;
+   
+}
+
+.forgot_password{
+    font-size: var(--base-font-size);
+    text-align: right;
+    height: 17px;
+}
+a{
+    text-decoration: none;
+    margin: 8px;
+    font-weight: 140px;
+    color: #2b65ee;
+}
+
+.login_button{
+    background: #131313;
+    color: #fff;
+    font-size: var(--base-font-size);
+    font-family: var(--base-font);
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 311px;
+    height: 41px;
+    border-radius: 12px;
+}
+
+.auth_section{
+    display: flex;
+    flex-direction: column;
+}
+
+.auth_form{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
+    
+    padding: 16px;
+    margin: 48px 16px 267px 16px;
+    width: 343px;
+    height: 497px;
+    box-sizing: border-box;
+
+}
+
+.social_login{
+    width: 311px;
+    height: 119px;
+    text-align: center;
+}
+
+.social_icons{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    height: 48px;
+}
+
+.auth_container{
+    container-type: inline-size;
+    container-name: auth-container;
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+}
+
+@container(min-wi){
+
+}
