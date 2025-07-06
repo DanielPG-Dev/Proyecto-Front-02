@@ -56,38 +56,39 @@
             </section>
         </div>
         <!-- contenedor de registro -->
-         <div class="register_form">
+         <div class="register_container">
             <header>
                 <h2>Create Account</h2>
                 <p>Create account to manage all your automotive business needs</p>
             </header>
-            <div>
-                <form action="/register" method="post">
-                    <div>
+            <div class="register_container_int">
+                <form class="register_form" action="/register" method="post">
+                    <div class="create_form">
                         <div>
-                            <label for="first_name">First name</label>
-                            <input type="text" id="first_name" placeholder="Your first name" required>
-                            <label for="last_name">Last name</label>
-                            <input type="text" id="last_name" placeholder="Your last name" required>
+                            <label for="first_name">First name</label><br>
+                            <input type="text" id="first_name" placeholder="Your first name" required><br>
+                            <label for="email">Email</label><br>
+                            <input type="email" id="email" placeholder="Enter email" required>
                         </div>
                         <div>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Enter email" required>
-                            <label for="phone">Phone</label>
+                            <label for="last_name">Last name</label><br>
+                            <input type="text" id="last_name" placeholder="Your last name" required><br>
+                            <label for="phone">Phone</label><br>
                             <input type="tel" id="phone" placeholder="+62">
                         </div>
-                        <div>
-                            <label for="password">Password</label>
-                            <input type="password" id="password" placeholder="Enter password" required>
-                        </div>
-                        <div class="forgot_password">
-                            <a href="/forgot_password">Forgot password</a>
-                        </div>
-                        <button type="submit" class="login_button">Login</button>
+                    </div>    
+                    <div class="div_password">
+                        <label for="password">Password</label><br>
+                        <input type="password" id="password" placeholder="Enter password" required>
                     </div>
+                    <div class="forgot_password">
+                        <a href="/forgot_password">Forgot password</a>
+                    </div>
+                    <button type="submit" class="login_button">Login</button> 
+                </form>
                     <div class="social_login">
                         <p>Or login with</p>
-                        <div class="social_login">
+                        <div class="social_icons">
                             <a href="https://www.google.com/?hl=es" target="_blank">
                                 <img src="./assets/icons/icon-google-circulo.svg" alt="google">
                             </a>
@@ -99,8 +100,7 @@
                             </a>
                         </div>
                         <p>Don’t have an account? <a href="#">Sign up</a></p>
-                    </div>   
-                </form>
+                    </div>    
             </div>
 
          </div>
